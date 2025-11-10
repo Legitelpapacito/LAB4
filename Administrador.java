@@ -1,11 +1,7 @@
-package model;
-
-// Administrador con permisos completos
 public class Administrador extends Usuario {
-    public Administrador(String nombre){
-        super(nombre);
+    public Administrador(String id, String nombre) {
+        super(id, nombre);
     }
-
-    @Override public boolean puedePublicar(){ return true; }
-    @Override public boolean puedeEliminar(){ return true; }
+    public boolean puedePublicar() { return true; }
+    public boolean puedeEliminar() { return true; }
 }
